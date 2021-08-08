@@ -1,4 +1,5 @@
 const  tranButton = document.querySelector('#tranButton');
+const  errorBox = document.querySelector('#error-text');
 const url = "https://api.funtranslations.com/translate/pirate.json";
 
 function textTranslation(){
@@ -6,14 +7,16 @@ function textTranslation(){
     const outputArea =  document.querySelector('#translate-output');
     const callUrl = constructURL(inputText);
     if( inputText ){
-    fetch(callUrl)
-    .then(res => res.json() )
-    .then(data => {
-        console.log(data)
-        outputArea.innerHTML = data.contents.translated;
-    }).catch( () => alert('Something wrong happend') );
+        errorBox.innerHTML = "";
+            fetch(callUrl)
+            .then(res => res.json() )
+            .then(data => {
+                console.log(data)
+                outputArea.innerHTML = data.contents.translated;
+            }).catch( () => alert('Something wrong happend') );
+
     }else{
-        alert("Please write something");
+        errorBox.innerHTML = "Please write something";
     }
 
 }
