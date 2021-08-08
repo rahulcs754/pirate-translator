@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -56,6 +59,7 @@ footer{
     text-align: center;
     position: absolute;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 #error-text{
