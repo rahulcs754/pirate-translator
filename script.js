@@ -11,7 +11,6 @@ function textTranslation(){
             fetch(callUrl)
             .then(res => res.json() )
             .then(data => {
-                console.log(data)
                 outputArea.innerHTML = data.contents.translated;
             }).catch( () => alert('Something wrong happend') );
 
