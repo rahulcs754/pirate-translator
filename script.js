@@ -1,5 +1,5 @@
 const  tranButton = document.querySelector('#tranButton');
-const url = "https://api.funtranslations.com/translate/minion.json";
+const url = "https://api.funtranslations.com/translate/pirate.json";
 
 function textTranslation(){
     const inputText = document.querySelector('#inputText').value;

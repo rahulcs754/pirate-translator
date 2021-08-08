@@ -5,16 +5,16 @@
 }
 
 :root {
-    --primary: hsl(192, 69%, 47%);
+    --primary: hsl(59, 73%, 51%);
     --black: #333333;
     --width-break:600px
 }
 
-body {
+body {  
     margin: 0;
-    font-family: 'Kalam', cursive;
+    font-family: 'Roboto', sans-serif;
     color: #333333;
-}
+} 
 
 nav {
     background-color: var(--primary);
@@ -54,18 +54,4 @@ button {
     max-height: 20vh;
     overflow:scroll;
     border: 1px solid var(--black);
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 1rem;
-    background-color: var(--primary);
-    text-align: center;
-}
-
-footer p {
-    max-width: var(--width-break);
-    margin: auto;
 }
