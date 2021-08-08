@@ -37,13 +37,9 @@ textarea {
     font-family: inherit;
 }
 
-button {
+.parot {
     background-color: var(--primary);
-    border: none;
-    margin: 1rem 0rem;
-    padding: 1rem 2rem;
-    font-family: 'Kalam', cursive;
-    font-size: large;
+    width: 150px;
 }
 
 
@@ -54,4 +50,9 @@ button {
     max-height: 20vh;
     overflow:scroll;
     border: 1px solid var(--black);
+}
+
+footer{
+    background-color: var(--primary);
+    text-align: center;
 }
