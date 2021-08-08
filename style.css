@@ -52,6 +52,7 @@ textarea {
     max-height: 20vh;
     overflow:scroll;
     border: 1px solid var(--black);
+    font-family: 'Roboto', sans-serif;
 }
 
 footer{
